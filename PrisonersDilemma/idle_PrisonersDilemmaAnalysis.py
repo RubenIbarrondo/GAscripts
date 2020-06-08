@@ -1,0 +1,297 @@
+Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+>>> pa, fa, fxa, fma, fna = Parse
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    pa, fa, fxa, fma, fna = Parse
+NameError: name 'Parse' is not defined
+>>> pa, fa, fxa, fma, fna = ParseTestData('')
+>>> c = 0
+>>> def plt_yu():
+	for fx, fm, fn in zip(fxa, fma, fna):
+		plt.plot(fx)
+		plt.plot(fm)
+		plt.plot(fn)
+		c+=1
+
+		
+>>> ca = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan']
+>>> len(ca)
+10
+>>> for fx, fm, fn in zip(fxa, fma, fna):
+	plt.plot(fx, color=ca[c])
+	plt.plot(fm, color=ca[c])
+	plt.plot(fn, color=ca[c])
+	c+=1ç
+	
+SyntaxError: invalid syntax
+>>> for fx, fm, fn in zip(fxa, fma, fna):
+	plt.plot(fx, color=ca[c])
+	plt.plot(fm, color=ca[c])
+	plt.plot(fn, color=ca[c])
+	c+=1
+
+	
+[<matplotlib.lines.Line2D object at 0x0121F3D0>]
+[<matplotlib.lines.Line2D object at 0x0121F2F0>]
+[<matplotlib.lines.Line2D object at 0x0121FB90>]
+[<matplotlib.lines.Line2D object at 0x0121FFF0>]
+[<matplotlib.lines.Line2D object at 0x0AA54630>]
+[<matplotlib.lines.Line2D object at 0x0AA54CD0>]
+[<matplotlib.lines.Line2D object at 0x0AA5B210>]
+[<matplotlib.lines.Line2D object at 0x0AA5B7B0>]
+[<matplotlib.lines.Line2D object at 0x0AA5BE50>]
+[<matplotlib.lines.Line2D object at 0x0AA5B1D0>]
+[<matplotlib.lines.Line2D object at 0x0AA61430>]
+[<matplotlib.lines.Line2D object at 0x0AA61F90>]
+[<matplotlib.lines.Line2D object at 0x0AA67490>]
+[<matplotlib.lines.Line2D object at 0x0AA67A50>]
+[<matplotlib.lines.Line2D object at 0x0AA67F90>]
+[<matplotlib.lines.Line2D object at 0x0AA6D5F0>]
+[<matplotlib.lines.Line2D object at 0x0AA6DC90>]
+[<matplotlib.lines.Line2D object at 0x0AA74190>]
+[<matplotlib.lines.Line2D object at 0x0AA74750>]
+[<matplotlib.lines.Line2D object at 0x0AA74DF0>]
+[<matplotlib.lines.Line2D object at 0x011F9D30>]
+[<matplotlib.lines.Line2D object at 0x011EFBD0>]
+[<matplotlib.lines.Line2D object at 0x011E7410>]
+[<matplotlib.lines.Line2D object at 0x011E0410>]
+[<matplotlib.lines.Line2D object at 0x08D309F0>]
+[<matplotlib.lines.Line2D object at 0x0AA795F0>]
+[<matplotlib.lines.Line2D object at 0x0AA79C90>]
+[<matplotlib.lines.Line2D object at 0x0AA81190>]
+[<matplotlib.lines.Line2D object at 0x0AA81750>]
+[<matplotlib.lines.Line2D object at 0x0AA81DF0>]
+>>> plt.show()
+>>> c =0
+>>> for fx, fm, fn in zip(fxa, fma, fna):
+	plt.plot(fx, color=ca[c])
+	c+=1
+
+	
+[<matplotlib.lines.Line2D object at 0x0AAE5DD0>]
+[<matplotlib.lines.Line2D object at 0x0AAED470>]
+[<matplotlib.lines.Line2D object at 0x0AAED410>]
+[<matplotlib.lines.Line2D object at 0x0AAEDA70>]
+[<matplotlib.lines.Line2D object at 0x0AAEDFD0>]
+[<matplotlib.lines.Line2D object at 0x0AAF5610>]
+[<matplotlib.lines.Line2D object at 0x0AAF5CD0>]
+[<matplotlib.lines.Line2D object at 0x0AAFA1D0>]
+[<matplotlib.lines.Line2D object at 0x0AAFA790>]
+[<matplotlib.lines.Line2D object at 0x0AAFAE30>]
+>>> plt.show()
+>>> c = 0
+>>> for fx, fm, fn in zip(fxa, fma, fna):
+	if fx[-1]>2.5:
+		plt.plot(fx, color=ca[c])
+		c+=1
+
+		
+[<matplotlib.lines.Line2D object at 0x011B5CB0>]
+[<matplotlib.lines.Line2D object at 0x011BB350>]
+[<matplotlib.lines.Line2D object at 0x011BB2F0>]
+[<matplotlib.lines.Line2D object at 0x011BB950>]
+[<matplotlib.lines.Line2D object at 0x011BBFF0>]
+[<matplotlib.lines.Line2D object at 0x011C24F0>]
+[<matplotlib.lines.Line2D object at 0x011C2BB0>]
+>>> plt.show()
+>>> for fx, fm, fn in zip(fxa, fma, fna):
+	if fx[-1]>2.9:
+		plt.plot(fx, color=ca[c%len(ca)])
+		c+=1
+
+		
+[<matplotlib.lines.Line2D object at 0x01654310>]
+[<matplotlib.lines.Line2D object at 0x01654990>]
+[<matplotlib.lines.Line2D object at 0x01654930>]
+[<matplotlib.lines.Line2D object at 0x01654F90>]
+[<matplotlib.lines.Line2D object at 0x0165D570>]
+>>> plt.show()
+>>> for fx, fm, fn in zip(fxa, fma, fna):
+	if fx[-1]<2.9:
+		plt.plot(fx, color=ca[c%len(ca)])
+		c+=1
+
+		
+[<matplotlib.lines.Line2D object at 0x016BBC10>]
+[<matplotlib.lines.Line2D object at 0x016C02B0>]
+[<matplotlib.lines.Line2D object at 0x016C0250>]
+[<matplotlib.lines.Line2D object at 0x016C08B0>]
+[<matplotlib.lines.Line2D object at 0x016C0F50>]
+>>> plt.show()
+>>> for fx, fm, fn in zip(fxa, fma, fna):
+	if fx[-1]>2.9:
+		plt.plot(fx, color=ca[0])
+	else:
+		plt.plot(fx, color=ca[1])
+
+		
+[<matplotlib.lines.Line2D object at 0x018EC050>]
+[<matplotlib.lines.Line2D object at 0x018EC6D0>]
+[<matplotlib.lines.Line2D object at 0x018EC670>]
+[<matplotlib.lines.Line2D object at 0x018ECDB0>]
+[<matplotlib.lines.Line2D object at 0x018F32B0>]
+[<matplotlib.lines.Line2D object at 0x018F3870>]
+[<matplotlib.lines.Line2D object at 0x018F3F30>]
+[<matplotlib.lines.Line2D object at 0x018F9430>]
+[<matplotlib.lines.Line2D object at 0x018F99F0>]
+[<matplotlib.lines.Line2D object at 0x018F3E30>]
+>>> plt.show()
+>>> coop_rate = [sum( sum(c)/len(c) for c in p)/len(p) for p in pa]
+>>> plt.plot(coop_rate)
+[<matplotlib.lines.Line2D object at 0x0164FAB0>]
+>>> plt.show()
+>>> coco_rate = [sum( sum(c[1::2])/len(c[1::2]) for c in p)/len(p) for p in pa]
+>>> deco_rate = [sum( sum(c[::2])/len(c[::2]) for c in p)/len(p) for p in pa]
+>>> plt.plot(coop_rate)
+[<matplotlib.lines.Line2D object at 0x0AB3A5F0>]
+>>> plt.plot(coco_rate)
+[<matplotlib.lines.Line2D object at 0x0AB3A1B0>]
+>>> plt.plot(deco_rate)
+[<matplotlib.lines.Line2D object at 0x0AB3A710>]
+>>> plt.show()
+>>> mean_f = [ fm[-1] for fm in fml]
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    mean_f = [ fm[-1] for fm in fml]
+NameError: name 'fml' is not defined
+>>> mean_f = [ fmean[-1] for fmean in fm]
+Traceback (most recent call last):
+  File "<pyshell#46>", line 1, in <module>
+    mean_f = [ fmean[-1] for fmean in fm]
+  File "<pyshell#46>", line 1, in <listcomp>
+    mean_f = [ fmean[-1] for fmean in fm]
+TypeError: 'float' object is not subscriptable
+>>> mean_f = [ fmean[-1] for fmean in fma]
+>>> plt.plot(mean_f)
+[<matplotlib.lines.Line2D object at 0x0AB14210>]
+>>> plt.show()
+>>> plt.plot(mean_f)
+[<matplotlib.lines.Line2D object at 0x0AC0F8B0>]
+>>> plt.plot(coco_rate)
+[<matplotlib.lines.Line2D object at 0x0AC0F450>]
+>>> plt.plot(deco_rate)
+[<matplotlib.lines.Line2D object at 0x0AB2EA90>]
+>>> plt.show()
+>>> plt.plot(mean_f)
+[<matplotlib.lines.Line2D object at 0x019272B0>]
+>>> plt.plot(np.array(coco_rate)*3)
+[<matplotlib.lines.Line2D object at 0x019271D0>]
+>>> plt.plot(np.array(deco_rate)*3)
+[<matplotlib.lines.Line2D object at 0x019278D0>]
+>>> plt.show()
+>>> coco_rate = [sum(c[1::2])/len(c[1::2]) for c in p for p in pa]
+Traceback (most recent call last):
+  File "<pyshell#58>", line 1, in <module>
+    coco_rate = [sum(c[1::2])/len(c[1::2]) for c in p for p in pa]
+NameError: name 'p' is not defined
+>>> coco_rate = [sum(c[1::2])/len(c[1::2]) for p in pa for c in p]
+>>> deco_rate = [sum(c[::2])/len(c[::2]) for p in pa for c in p]
+>>> f_perch = [ fc for fp in fa for fc in fp]
+>>> plt.scatter(f_perch, coco_rate)
+<matplotlib.collections.PathCollection object at 0x011E15D0>
+>>> plt.show()
+>>> plt.scatter(deco_rate, coco_rate)
+<matplotlib.collections.PathCollection object at 0x0AA638F0>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=f_perch)
+<matplotlib.collections.PathCollection object at 0x0AB5FBB0>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=np.array(f_perch)*100)
+<matplotlib.collections.PathCollection object at 0x0ABBCF10>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=np.array(f_perch)*50)
+<matplotlib.collections.PathCollection object at 0x0B240190>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=np.array(f_perch)**2)
+<matplotlib.collections.PathCollection object at 0x0B29E3F0>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=np.array(f_perch)**2*10)
+<matplotlib.collections.PathCollection object at 0x0ABCE9B0>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=np.array(f_perch)**3*10)
+<matplotlib.collections.PathCollection object at 0x0AAF6F90>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=np.array(f_perch)**3)
+<matplotlib.collections.PathCollection object at 0x0AB35410>
+>>> plt.show()
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=np.array(f_perch)**5)
+<matplotlib.collections.PathCollection object at 0x019693B0>
+>>> plt.show()
+>>> 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+>>> 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+>>> on = np.ones(100)+(np.random.random(100)-0.5)
+>>> plt.plot(on)
+[<matplotlib.lines.Line2D object at 0x0AA97750>]
+>>> plt.show()
+>>> standard_deviation(on)
+nan
+>>> 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+>>> on = np.ones(100)+(np.random.random(100)-0.5)
+>>> standard_deviation(on)
+0.279304111386575
+>>> correlation(on,on)
+1.0
+>>> correlation(on,-on)
+-1.0
+>>> correlation(on,2*on)
+1.0
+>>> on2 = np.ones(100)+(np.random.random(100)-0.5)
+>>> correlation(on,on2)
+0.14150787050790353
+>>> pa, fa, fxa, fma, fna = ParseTestData('')
+>>> coco_rate = [sum(c[1::2])/len(c[1::2]) for p in pa for c in p]
+>>> deco_rate = [sum(c[::2])/len(c[::2]) for p in pa for c in p]
+>>> f_perch = [ fc for fp in fa for fc in fp]
+>>> plt.scatter(x=deco_rate, y=coco_rate, s=f_perch)
+<matplotlib.collections.PathCollection object at 0x015B6110>
+>>> plt.show()
+>>> correlation(f_perch, coco_rate)
+0.46039839204112015
+>>> correlation(f_perch, deco_rate)
+-0.21127321576942093
+>>> correlation(coco_rate, deco_rate)
+-0.33438586978141493
+>>> plt.scatter(x=coco_rate, y=f_perch)
+<matplotlib.collections.PathCollection object at 0x00F48CF0>
+>>> plt.show()
+>>> cococo_rate = [sum(c[5::6])/len(c[5::6])+sum(c[7::6])/len(c[7::6]) for p in pa for c in p]
+>>> correlation(coco_rate, cococo_rate)
+0.8968745850338609
+>>> correlation(f, cococo_rate)
+Traceback (most recent call last):
+  File "<pyshell#106>", line 1, in <module>
+    correlation(f, cococo_rate)
+NameError: name 'f' is not defined
+>>> correlation(f_perch, cococo_rate)
+0.39203890441008643
+>>> correlation(f_perch, coco_rate)
+0.46039839204112015
+>>> f_perpop = [sum(f_perch[i:i+20])/20 for i in range(0,200,20)]
+>>> coco_perpop = [sum(coco_rate[i:i+20])/20 for i in range(0,200,20)]
+>>> deco_perpop = [sum(deco_rate[i:i+20])/20 for i in range(0,200,20)]
+>>> correlation(f_perpop, coco_perpop)
+0.4850952503001295
+>>> correlation(f_perpop, deco_perpop)
+-0.22272652754912128
+>>> cococo_perpop = [sum(cococo_rate[i:i+20])/20 for i in range(0,200,20)]
+>>> correlation(f_perpop, cococo_perpop)
+0.41639927065624854
+>>> dedeco_rate = [sum(c[0::6])/len(c[0::6])+sum(c[2::6])/len(c[2::6]) for p in pa for c in p]
+>>> correlation(f_perch, dedeco_rate)
+0.23292749444792832
+>>> dedeco_perpop = [sum(dedeco_rate[i:i+20])/20 for i in range(0,200,20)]
+>>> correlation(f_perpop, dedeco_perpop)
+0.2564447066583533
+>>> dedeco_rate = [sum(c[0::8])/len(c[0::8])+sum(c[2::8])/len(c[2::8]) for p in pa for c in p]
+>>> correlation(f_perch, dedeco_rate)
+-0.31172518111014846
+>>> dedeco_perpop = [sum(dedeco_rate[i:i+20])/20 for i in range(0,200,20)]
+>>> correlation(f_perpop, dedeco_perpop)
+-0.3281955896296398
+>>> 
