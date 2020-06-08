@@ -23,7 +23,7 @@ Any new problem can be adapted to be solved by this procedure.
 
 There are many directories that I used to try different examples and to study deeply the properties of Genetic Algorithms.
 
-## [Exercises]()
+## Exercises
 
 This directory contains two simple examples that easily check if the produced GA procedure behaves as expected.
 
@@ -38,7 +38,7 @@ The three figures show the number of steps needed to find the best chromosome in
 Different values for `pc` were tested (horizontal axis) and the number of steps needed counted (vertical axis).
 A detailed value sweep was performed for the range 0.5 - 1.0.
 
-## [EgFunction]()
+## EgFunction
 
 This directory contains the GAs that look for an optimum point in a given function.
 
@@ -52,7 +52,7 @@ The [data](EgFunction/data) directory contains the output data from the GA with 
 That data was used to generate the images in [Images and animations](EgFunction/Images and animations),
  those images were used in the project memory.
  
- ## [PrisonersDilemma]()
+ ## PrisonersDilemma
  
  The Prisoners Dilemma is a canonical game example in game theory.
  In a nutshell, two players are forced to decide whether to cooperate or betray each other.
@@ -77,11 +77,11 @@ That data was used to generate the images in [Images and animations](EgFunction/
  
  The Figures directory contains figures generated from different trials, corresponding to the outputs stored in the other directories.
  
- ## [CurveFitting]()
+ ## CurveFitting
  
  This directory contains a single file [CurveFit](CurveFitting/CurveFit.py) implementing a genetic algorithm that looks for the best parameters to fit a data set with a given parametrized function.
  
- ## [SpiderWeb]()
+ ## SpiderWeb
  
  In this example the building of a web is considered. A web is defined as an instance of the class `Web` contained in [Web](SpiderWeb/Web),
  it is defined by a `Holder` and a set of points describing the start and end of each thread.
