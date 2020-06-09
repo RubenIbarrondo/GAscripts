@@ -54,6 +54,7 @@ def surface3D(X, Y, Z):
     plt.show()
 
 #### EXAMPLE
+# https://matplotlib.org/gallery/images_contours_and_fields/image_annotated_heatmap.html#sphx-glr-gallery-images-contours-and-fields-image-annotated-heatmap-py
 def heatmap(data, row_labels, col_labels, ax=None,
             cbar_kw={}, cbarlabel="", **kwargs):
     """
