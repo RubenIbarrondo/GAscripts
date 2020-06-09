@@ -1,7 +1,7 @@
 Python 3.6.1 (v3.6.1:69c0db5, Mar 21 2017, 17:54:52) [MSC v.1900 32 bit (Intel)] on win32
 Type "copyright", "credits" or "license()" for more information.
 >>> 
- RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisonersDilemma.py 
 >>> pa, fa, fxa, fma, fna = Parse
 Traceback (most recent call last):
   File "<pyshell#0>", line 1, in <module>
@@ -221,9 +221,9 @@ NameError: name 'p' is not defined
 <matplotlib.collections.PathCollection object at 0x019693B0>
 >>> plt.show()
 >>> 
- RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisonersDilemma.py 
 >>> 
- RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisonersDilemma.py 
 >>> on = np.ones(100)+(np.random.random(100)-0.5)
 >>> plt.plot(on)
 [<matplotlib.lines.Line2D object at 0x0AA97750>]
@@ -231,7 +231,7 @@ NameError: name 'p' is not defined
 >>> standard_deviation(on)
 nan
 >>> 
- RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisionersDilema.py 
+ RESTART: C:\Users\Rubén\Dropbox\5. Maila\TFG general\Scripts\GAscripts\PrisonersDilemma.py 
 >>> on = np.ones(100)+(np.random.random(100)-0.5)
 >>> standard_deviation(on)
 0.279304111386575

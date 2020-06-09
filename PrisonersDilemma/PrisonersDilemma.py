@@ -1,5 +1,5 @@
 ##
-## Title: Prisioner's Dilema
+## Title: Prisoner's Dilemma
 ## Author: Rubén Ibarrondo
 ## Description:
 ##      1st trial with fitxed fitnes landscape

@@ -1,11 +1,11 @@
 ##
-## Title: Prisioners Dilemma Figures
+## Title: Prisoners Dilemma Figures
 ## Author: Rubén Ibarrondo
 ## Description:
 
 import numpy as np
 
-from PrisionersDilema import *
+from PrisonersDilemma import *
 import PD_behaviour_analysis as pda
 import plotTools
 
@@ -26,7 +26,7 @@ from matplotlib import cm
 # ============================================
 
 '''GENERAL EXAMPLE: DATA'''
-pa, fa, fxa, fma, fna = ParseTestData(path='PrisonersDilemma_Tests/PrisionersDilema_Test')
+pa, fa, fxa, fma, fna = ParseTestData(path='PrisonersDilemma_Tests/PrisonersDilemma_Test')
 colors = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:gray', 'tab:olive', 'tab:cyan']
 
 Np = len(pa[0])
